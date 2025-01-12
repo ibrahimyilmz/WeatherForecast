@@ -1,8 +1,6 @@
 import requests
 from datetime import datetime, timedelta
 
-API_KEY = '9bbd2f913f14f1d88851bdb5d7c400bc'
-
 def get_data (place="Ankara", forecast_days=None, kind=None):
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_KEY}"
     response = requests.get(url)
